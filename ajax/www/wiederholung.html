@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title></title>
+    <script>
+      function init(){
+              let myhead = document.getElementById('myhead')
+              myhead.innerHTML = 'Überschrift <i>nachher</i>'
+
+            }
+
+      function dofirstload(){
+            let xhr = new XMLHttpRequest()
+              xhr.onreadystatechange=function(){
+                      if(xhr.readyState===4 && xhr.status === 200){
+                            concole.log(xhr.respondeText)
+                            documet.getElemetById("myheader").innerHTML=xhr.respondeText
+                            }
+                    }
+              xhr.open("GET","mytext.txt")
+              xhr.send()
+            }
+      window.onload=function(){
+              init()
+              dofirstload()
+
+            }
+    </script>
+
+  </head>
+  <body>
+    <h1 id='myhead'>Überschrift vorher</h1>
+  </body>
+</html>
