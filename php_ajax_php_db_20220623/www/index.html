@@ -13,17 +13,16 @@
               let time = document.getElementById('time');
               let req = new XMLHttpRequest();
 
-      function check_for_new(){
-          time.innerHTML = "Es ist "+Date.now();
-            let xhr = new XMLHttpRequest()
-              xhr.onload=function(){
-                        //let antwort = xhr.respondeText;
-                        db_loader.innerHTML= this.responseText;
-                    }
-              xhr.open("GET", "hello.php?q=hi");
-              xhr.send();
-
-          }
+              function check_for_new(){
+                  time.innerHTML = "Es ist "+Date.now();
+                    let xhr = new XMLHttpRequest()
+                      xhr.onload=function(){
+                                //let antwort = xhr.respondeText;
+                                db_loader.innerHTML= this.responseText;
+                            }
+                      xhr.open("GET", "hello.php?q=hi");
+                      xhr.send();
+                  }
           window.setInterval(check_for_new,1000);
         }
 
