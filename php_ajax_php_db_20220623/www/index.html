@@ -27,17 +27,17 @@
           window.setInterval(check_for_new,1000);
         }
 
-      function dofirstload(){
-            let xhr = new XMLHttpRequest()
-              xhr.onreadystatechange=function(){
-                      if(xhr.readyState===4 && xhr.status === 200){
-                            concole.log(xhr.respondeText)
-                            documet.getElemetById("myheader").innerHTML=xhr.respondeText
-                            }
-                    }
-              xhr.open("GET","mytext.txt")
-              xhr.send()
-            }
+      // function dofirstload(){
+      //       let xhr = new XMLHttpRequest()
+      //         xhr.onreadystatechange=function(){
+      //                 if(xhr.readyState===4 && xhr.status === 200){
+      //                       concole.log(xhr.respondeText)
+      //                       documet.getElemetById("myheader").innerHTML=xhr.respondeText
+      //                       }
+      //               }
+      //         xhr.open("GET","mytext.txt")
+      //         xhr.send()
+      //       }
       window.onload=function(){
               init()
               //dofirstload()
