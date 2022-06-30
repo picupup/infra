@@ -6,5 +6,5 @@
 //
 
 $q = $_REQUEST["q"];
-
 echo "hello $q";
+echo shell_exec('./getDemoData.php');

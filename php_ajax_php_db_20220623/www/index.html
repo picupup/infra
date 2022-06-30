@@ -20,10 +20,11 @@
                                 //let antwort = xhr.respondeText;
                                 db_loader.innerHTML= this.responseText;
                             }
-                      xhr.open("GET", "hello.php?q=hi");
+                      //xhr.open("GET", "hello.php?q=hi");
+                      xhr.open("GET", "getDemoData.php");
                       xhr.send();
                   }
-          window.setInterval(check_for_new,1000);
+              window.setInterval(check_for_new,1000);
         }
 
       // function dofirstload(){

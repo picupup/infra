@@ -21,16 +21,8 @@ if (!$conn) {
 
 $sql = "select * from demo";
 $result = mysqli_query($conn, $sql);
-if ($result){
- // header("Content-Type: text/html");
-  $head=file_get_contents("html/head.html");
-  echo $head;
-
-}
 while($row = mysqli_fetch_assoc($result)) {
   echo $row['id']." ".$row['name']."<br>\n";
 }
 
-$foot=file_get_contents("html/foot.html");
-echo $foot;
 mysqli_close($conn);
