@@ -2,7 +2,7 @@
 //<<index.php>>
 //erfkarimi
 //2022-06-09_16:29:05
-//Thema:Hier ist eine request von internet simuliert wird durch die curl im deploy überprüft
+//Thema:Hier ist eine request von internet simuliert, wird durch die curl im deploy überprüft
 //
 //require_once gleich wie include
 
